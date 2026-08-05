@@ -1,0 +1,11 @@
+#! /bin/sh
+#
+# Created by configure
+
+CPPFLAGS='-I/Users/taufik/.homebrew/opt/icu4c/include' \
+LDFLAGS='-L/Users/taufik/.homebrew/opt/icu4c/lib' \
+'./configure' \
+'--with-php-config=/Applications/XAMPP/xamppfiles/bin/php-config' \
+'--enable-intl' \
+'PKG_CONFIG_PATH=/Users/taufik/.homebrew/opt/icu4c/lib/pkgconfig:' \
+"$@"
